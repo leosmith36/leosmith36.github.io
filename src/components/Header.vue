@@ -16,7 +16,7 @@
       <div class="flex basis-1/2 justify-end space-x-3 px-5">
         <a class="transition hover:text-gray-600" href="mailto:leosmith36@yahoo.com"><font-awesome-icon icon="fa-solid fa-envelope"/></a>
         <a class="transition hover:text-gray-600" href="https://www.linkedin.com/in/leomsmith/"><font-awesome-icon icon="fa-brands fa-linkedin"/></a>
-        <a class="transition hover:text-gray-600" href="https://www.facebook.com/profile.php?id=100028566519783"><font-awesome-icon icon="fa-brands fa-facebook"/></a>
+        <a class="transition hover:text-gray-600" href="https://www.facebook.com/leosmith36/"><font-awesome-icon icon="fa-brands fa-facebook"/></a>
       </div>
     </div>
   </nav>
