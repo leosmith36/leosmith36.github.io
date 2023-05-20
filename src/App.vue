@@ -5,11 +5,13 @@ import Header from './components/Header.vue'
 <template>
   <div class="text-white">
     <Header/>
-    <router-view v-slot="{ Component }">
-      <Transition appear mode="out-in">
-        <component :is="Component"/>
-      </Transition>
-    </router-view>
+    <div class="wrapper">
+      <router-view v-slot="{ Component }">
+        <Transition appear mode="out-in">
+          <component :is="Component"/>
+        </Transition>
+      </router-view>
+    </div>
   </div>
 </template>
 

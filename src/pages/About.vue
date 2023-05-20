@@ -1,5 +1,5 @@
 <template>
   <div>
-    COMING SOON
+    <h1>About Me </h1>
   </div>
 </template>
