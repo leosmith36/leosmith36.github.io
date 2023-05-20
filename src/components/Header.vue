@@ -11,11 +11,11 @@
       </div>
       <div id="nav-list" class="hs-collapse flex max-md:flex-col basis-2/3 max-md:space-y-1 max-md:pt-3">
         <div class="flex max-md:flex-col max-md:text-center basis-1/2 justify-center md:space-x-5">
-          <router-link class="transition hover:text-gray-600" to="/about">About</router-link>
-          <router-link class="transition hover:text-gray-600" to="/resume">Resumé</router-link>
-          <router-link class="transition hover:text-gray-600" to="/portfolio">Portfolio</router-link>
-          <router-link class="transition hover:text-gray-600" to="/reading">Reading</router-link>
-          <router-link class="transition hover:text-gray-600" to="/contact">Contact</router-link>
+          <span><router-link class="transition hover:text-gray-600" to="/about">About</router-link></span>
+          <span><router-link class="transition hover:text-gray-600" to="/resume">Resumé</router-link></span>
+          <span><router-link class="transition hover:text-gray-600" to="/portfolio">Portfolio</router-link></span>
+          <span><router-link class="transition hover:text-gray-600" to="/reading">Reading</router-link></span>
+          <span><router-link class="transition hover:text-gray-600" to="/contact">Contact</router-link></span>
         </div>
         <div class="flex basis-1/2 md:justify-end max-md:justify-center space-x-3 px-5">
           <a class="transition hover:text-gray-600" href="mailto:leosmith36@yahoo.com"><font-awesome-icon icon="fa-solid fa-envelope"/></a>
