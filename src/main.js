@@ -6,6 +6,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import 'preline'
 
 library.add(faLinkedin)
 library.add(faFacebook)
