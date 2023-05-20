@@ -14,13 +14,21 @@ body {
     font-size: 16px;
 }
 
-.wrapper {
-    margin: 2rem 0 5rem 5rem;
+h1 {
+  font-size: 24px;
+  font-weight: bold;
 }
 
-h1 {
-    font-size: 24px;
-    font-weight: bold;
+@media only screen and (min-width: 768px) {
+  .wrapper {
+      margin: 2rem 0 5rem 5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+      margin: 0 2rem;
+  }
 }
 
 /* :root {
