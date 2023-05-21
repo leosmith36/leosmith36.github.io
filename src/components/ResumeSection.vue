@@ -13,7 +13,7 @@ const open = ref(false)
       :class="{ 'rounded-b-md': !open }"
       class="flex rounded-t-md items-center bg-white p-3 transition hover:bg-gray-400 hover:cursor-pointer"
     >
-      <font-awesome-icon class="mr-2" :icon="['fa-solid', open ? 'fa-caret-down' : 'fa-caret-right']"/>
+      <font-awesome-icon class="w-6 -ml-1 mr-1" :icon="['fa-solid', open ? 'fa-caret-down' : 'fa-caret-right']"/>
       <h2>{{ title }}</h2>
     </div>
     <collapse-transition>
