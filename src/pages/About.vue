@@ -7,8 +7,8 @@
       maintain and improve the company's HUD and customer portal, among many other duties.
     </p>
     <p>
-      I have a very analytical mind, and I find enjoyment in utilizing my skills in logic and problem-solving to address challenging
-      issues alongside motivated teammates. Whether it is a mathematical proof or a computer algorithm, I find great satisfaction in developing
+      I have a very analytical mind, and I find enjoyment in utilizing my skills in logic and problem-solving in challenging projects
+      alongside motivated teammates. Whether it is a mathematical proof or a computer algorithm, I find great satisfaction in developing
       simple and elegant solutions to problems with both practical and theoretical applications. Likewise, my goal for the near future is to continue
       growing my skills in computer science through online, part-time graduate studies while working as a full-time software developer.
     </p>
