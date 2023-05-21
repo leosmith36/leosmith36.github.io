@@ -18,7 +18,7 @@ onBeforeUnmount(() => window.removeEventListener('resize', updateWidth))
         <router-link to="/">
           <img class="w-32 h-auto" src="../assets/logo.png" alt="Leo Smith Logo"/>
         </router-link>
-        <button @click="open = !open" class="md:hidden">
+        <button @click="open = !open" class="md:hidden transition hover:text-gray-600">
           <font-awesome-icon :icon="['fas', open ? 'x' : 'bars']"/>
         </button>
       </div>
