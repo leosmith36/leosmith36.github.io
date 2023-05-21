@@ -6,6 +6,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, faBars, faX } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import CollapseTransition from '@ivanv/vue-collapse-transition/src/CollapseTransition.vue'
 
 library.add(faLinkedin)
 library.add(faFacebook)
@@ -16,6 +17,7 @@ library.add(faX)
 const app = createApp(App)
 
 app.component('font-awesome-icon', FontAwesomeIcon)
+app.component('collapse-transition', CollapseTransition)
 
 app.use(router)
 

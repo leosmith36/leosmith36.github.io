@@ -1,6 +1,5 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue'
-import CollapseTransition from '@ivanv/vue-collapse-transition/src/CollapseTransition.vue'
 
 const open = ref(false)
 const width = ref(screen.width)
@@ -23,7 +22,7 @@ onBeforeUnmount(() => window.removeEventListener('resize', updateWidth))
         </button>
       </div>
       <div class="basis-2/3">
-        <CollapseTransition>
+        <collapse-transition>
           <div v-show="open || width >= 768">
             <div class="flex max-md:flex-col max-md:space-y-1 max-md:pt-3">
               <div class="flex max-md:flex-col max-md:text-center basis-1/2 justify-center md:space-x-8">
@@ -40,7 +39,7 @@ onBeforeUnmount(() => window.removeEventListener('resize', updateWidth))
               </div>
             </div>
           </div>
-        </CollapseTransition>
+        </collapse-transition>
       </div>
     </div>
   </nav>
