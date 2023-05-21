@@ -37,6 +37,10 @@ const routes = [
 		name: 'Reading',
 		component: Reading,
 	},
+	{
+		path: '/:catchAll(.*)',
+		redirect: '/'
+	}
 ]
 
 const router = createRouter({
