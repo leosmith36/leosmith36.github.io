@@ -13,13 +13,13 @@ onBeforeUnmount(() => window.removeEventListener('resize', updateWidth))
 
 <template>
   <nav>
-    <div class="text-white flex max-md:flex-col md:h-16 md:items-center pt-3">
+    <div class="text-white flex max-md:flex-col md:h-16 md:items-center p-5">
       <div class="flex justify-between basis-1/3">
-        <router-link class="px-5" to="/">
+        <router-link to="/">
           <img class="w-32 h-auto" src="../assets/logo.png" alt="Leo Smith Logo"/>
         </router-link>
-        <button @click="open = !open" class="md:hidden px-5">
-          <font-awesome-icon icon="fa-solid fa-bars"/>
+        <button @click="open = !open" class="md:hidden">
+          <font-awesome-icon :icon="['fas', open ? 'x' : 'bars']"/>
         </button>
       </div>
       <div class="basis-2/3">
