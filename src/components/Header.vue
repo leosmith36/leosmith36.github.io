@@ -26,14 +26,14 @@ onBeforeUnmount(() => window.removeEventListener('resize', updateWidth))
         <CollapseTransition>
           <div v-show="open || width >= 768">
             <div class="flex max-md:flex-col max-md:space-y-1 max-md:pt-3">
-              <div class="flex max-md:flex-col max-md:text-center basis-1/2 justify-center md:space-x-5">
+              <div class="flex max-md:flex-col max-md:text-center basis-1/2 justify-center md:space-x-8">
                 <span><router-link class="transition hover:text-gray-600" to="/about">About</router-link></span>
                 <span><router-link class="transition hover:text-gray-600" to="/resume">Resumé</router-link></span>
                 <span><router-link class="transition hover:text-gray-600" to="/portfolio">Portfolio</router-link></span>
                 <span><router-link class="transition hover:text-gray-600" to="/reading">Reading</router-link></span>
                 <span><router-link class="transition hover:text-gray-600" to="/contact">Contact</router-link></span>
               </div>
-              <div class="flex basis-1/2 md:justify-end max-md:justify-center space-x-3 px-5">
+              <div class="flex basis-1/2 md:justify-end max-md:justify-center space-x-4 px-5">
                 <a class="transition hover:text-gray-600" href="mailto:leosmith36@yahoo.com"><font-awesome-icon icon="fa-solid fa-envelope"/></a>
                 <a class="transition hover:text-gray-600" href="https://www.linkedin.com/in/leomsmith/"><font-awesome-icon icon="fa-brands fa-linkedin"/></a>
                 <a class="transition hover:text-gray-600" href="https://www.facebook.com/leosmith36/"><font-awesome-icon icon="fa-brands fa-facebook"/></a>
