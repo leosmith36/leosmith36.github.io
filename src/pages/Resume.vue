@@ -6,7 +6,7 @@ import ResumeSection from '../components/ResumeSection.vue'
   <div>
     <div class="flex justify-between items-center">
       <h1>Resumé</h1>
-      <a href="/resume.pdf" download class="bg-gray-400 px-4 rounded-md text-black transition hover:bg-gray-500 flex items-center">
+      <a href="/resume.pdf" download class="px-4 button flex items-center">
         Download
       </a>
     </div>
