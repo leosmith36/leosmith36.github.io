@@ -1,10 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from './pages/Home.vue'
 import About from './pages/About.vue'
-import Portfolio from './pages/Portfolio.vue'
+import Projects from './pages/Projects.vue'
 import Contact from './pages/Contact.vue'
 import Resume from './pages/Resume.vue'
 import Reading from './pages/Reading.vue'
+import Blog from './pages/Blog.vue'
 
 const routes = [
 	{
@@ -18,9 +19,9 @@ const routes = [
 		component: About,
 	},
 	{
-		path: '/portfolio',
-		name: 'Portfolio',
-		component: Portfolio,
+		path: '/projects',
+		name: 'Projects',
+		component: Projects,
 	},
 	{
 		path: '/contact',
@@ -36,6 +37,11 @@ const routes = [
 		path: '/reading',
 		name: 'Reading',
 		component: Reading,
+	},
+	{
+		path: '/blog',
+		name: 'Blog',
+		component: Blog
 	},
 	{
 		path: '/:catchAll(.*)',

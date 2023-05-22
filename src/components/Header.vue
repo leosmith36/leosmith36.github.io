@@ -28,8 +28,9 @@ onBeforeUnmount(() => window.removeEventListener('resize', updateWidth))
               <div class="flex max-md:flex-col max-md:text-center basis-1/2 justify-center md:space-x-8">
                 <span><router-link class="transition hover:text-gray-600" to="/about">About</router-link></span>
                 <span><router-link class="transition hover:text-gray-600" to="/resume">Resumé</router-link></span>
-                <span><router-link class="transition hover:text-gray-600" to="/portfolio">Portfolio</router-link></span>
+                <span><router-link class="transition hover:text-gray-600" to="/projects">Projects</router-link></span>
                 <span><router-link class="transition hover:text-gray-600" to="/reading">Reading</router-link></span>
+                <span><router-link class="transition hover:text-gray-600" to="/blog">Blog</router-link></span>
                 <span><router-link class="transition hover:text-gray-600" to="/contact">Contact</router-link></span>
               </div>
               <div class="flex basis-1/2 md:justify-end max-md:justify-center space-x-4 px-5">

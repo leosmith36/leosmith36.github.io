@@ -6,7 +6,7 @@ import ResumeSection from '../components/ResumeSection.vue'
   <div>
     <div class="flex justify-between items-center">
       <h1>Resumé</h1>
-      <a href="/resume.pdf" download class="bg-gray-400 my-4 px-4 py-2 rounded-md text-black transition hover:bg-gray-500 flex items-center">
+      <a href="/resume.pdf" download class="bg-gray-400 px-4 rounded-md text-black transition hover:bg-gray-500 flex items-center">
         Download
       </a>
     </div>
@@ -32,6 +32,7 @@ import ResumeSection from '../components/ResumeSection.vue'
         <p><em>Voxtelesys</em>, Fargo, ND</p>
       </ResumeSection>
       <ResumeSection title="Relevant Coursework"/>
+      <ResumeSection title="Skills"/>
     </div>
   </div>
 </template>
