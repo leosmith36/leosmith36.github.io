@@ -1,7 +1,10 @@
 <script setup>
 import { ref } from 'vue'
 
-const props = defineProps({ title: String })
+const props = defineProps({
+  title: String,
+  contents: Array
+})
 
 const open = ref(false)
 </script>
@@ -19,7 +22,20 @@ const open = ref(false)
     <collapse-transition>
       <div v-show="open" class=" bg-white rounded-b-md">
         <div class="p-3">
-          <slot/>
+          <slot>
+            <div class="space-y-2">
+              <div v-for="entry in contents">
+                <b>{{ entry.title }}</b>
+                <div class="flex justify-between">
+                  <p><em>{{ entry.site }}</em>, {{ entry.location }}</p>
+                  <p><em>{{ entry.dates }}</em></p>
+                </div>
+                <ul class="list-disc">
+                  <li v-for="note in entry.details" v-html="note"/>
+                </ul>
+              </div>
+            </div>
+          </slot>
         </div>
       </div>
     </collapse-transition>
