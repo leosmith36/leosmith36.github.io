@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 :root {
-    background-color: black;
+  background-color: #433a3f;
 }
 
 html {
-    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 
 body {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 h1 {
