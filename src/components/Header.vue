@@ -15,7 +15,7 @@ function toggleSidebar() {
       <nav>
         <div class="flex pt-5 px-5 pb-2 justify-between">
           <router-link to="/">
-            <img class="w-32 h-auto" src="../assets/logo_color.png" alt="Leo Smith Logo"/>
+            <img class="w-32 h-auto" src="../assets/logo.png" alt="Leo Smith Logo"/>
           </router-link>
           <button class="text-inherit link" type="button" @click="toggleSidebar">
             <font-awesome-icon :icon="['fas', collapsed ? 'bars' : 'x']"/>
