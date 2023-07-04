@@ -1,47 +1,28 @@
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { ref } from 'vue'
+import Sidebar from './Sidebar.vue'
 
-const open = ref(false)
-const width = ref(screen.width)
+const collapsed = ref(true)
 
-const updateWidth = () => width.value = screen.width
-
-onMounted(() => window.addEventListener('resize', updateWidth))
-onBeforeUnmount(() => window.removeEventListener('resize', updateWidth))
+function toggleSidebar() {
+  collapsed.value = !collapsed.value
+}
 </script>
 
 <template>
-  <nav>
-    <div class="text-white flex max-md:flex-col md:h-16 md:items-center p-5">
-      <div class="flex justify-between basis-1/3">
-        <router-link to="/">
-          <img class="w-32 h-auto" src="../assets/logo.png" alt="Leo Smith Logo"/>
-        </router-link>
-        <button type="button" @click="open = !open" class="md:hidden link">
-          <font-awesome-icon :icon="['fas', open ? 'x' : 'bars']"/>
-        </button>
-      </div>
-      <div class="basis-2/3">
-        <collapse-transition>
-          <div v-show="open || width >= 768">
-            <div class="flex max-md:flex-col max-md:space-y-1 max-md:pt-3">
-              <div class="flex max-md:flex-col max-md:text-center basis-1/2 justify-center md:space-x-8">
-                <span><router-link class="link" to="/about">About</router-link></span>
-                <span><router-link class="link" to="/resume">Resumé</router-link></span>
-                <span><router-link class="link" to="/projects">Projects</router-link></span>
-                <span><router-link class="link" to="/reading">Reading</router-link></span>
-                <span><router-link class="link" to="/blog">Blog</router-link></span>
-                <span><router-link class="link" to="/contact">Contact</router-link></span>
-              </div>
-              <div class="flex basis-1/2 md:justify-end max-md:justify-center space-x-4 px-5">
-                <a class="link" href="mailto:leosmith36@yahoo.com"><font-awesome-icon icon="fa-solid fa-envelope"/></a>
-                <a class="link" href="https://www.linkedin.com/in/leomsmith/"><font-awesome-icon icon="fa-brands fa-linkedin"/></a>
-                <a class="link" href="https://www.facebook.com/leosmith36/"><font-awesome-icon icon="fa-brands fa-facebook"/></a>
-              </div>
-            </div>
-          </div>
-        </collapse-transition>
-      </div>
-    </div>
-  </nav>
+  <div>
+    <header>
+      <nav>
+        <div class="flex pt-5 px-5 pb-2 justify-between">
+          <router-link to="/">
+            <img class="w-32 h-auto" src="../assets/logo.png" alt="Leo Smith Logo"/>
+          </router-link>
+          <button class="text-inherit link" type="button" @click="toggleSidebar">
+            <font-awesome-icon :icon="['fas', collapsed ? 'bars' : 'x']"/>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <Sidebar :show="!collapsed" class="absolute right-0 mr-2"/>
+  </div>
 </template>

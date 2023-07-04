@@ -14,8 +14,8 @@
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/vue-fontawesome": "^3.0.3",
-    "@ivanv/vue-collapse-transition": "^1.0.2",
-    "npm": "^8.19.4",
+    "gsap": "^3.12.2",
+    "npm": "^9.7.2",
     "vue": "^3.2.47",
     "vue-router": "^4.0.13"
   },

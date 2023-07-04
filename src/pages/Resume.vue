@@ -51,9 +51,7 @@ const internshipContents = ref([
   <div>
     <div class="flex justify-between items-center">
       <h1>Resumé</h1>
-      <a href="/resume.pdf" download class="px-4 button flex items-center">
-        Download
-      </a>
+      <a href="/resume.pdf" download class="px-4 button flex items-center">Download</a>
     </div>
     <div class="space-y-4">
       <ResumeSection title="Education" :contents="educationContents"/>
@@ -70,19 +68,22 @@ const internshipContents = ref([
         </ul>
       </ResumeSection>
       <ResumeSection title="Skills">
-        <ul class="list-disc grid grid-cols-4">
-          <li>JavaScript</li>
-          <li>Vue.js</li>
-          <li>Node.js</li>
-          <li>MariaDB</li>
-          <li>MongoDB</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Git</li>
-          <li>Java</li>
-          <li>Python</li>
-          <li>R</li>
-          <li>TensorFlow</li>
+        <ul class="list-disc">
+          <li>
+            Programming languages:
+            <ul class="list-circle">
+              <li>Javascript (full-stack web development)</li>
+              <li>C# (application development)</li>
+              <li>Python (machine learning)</li>
+              <li>Java (school and personal projects)</li>
+              <li>R (school and research)</li>
+            </ul>
+          </li>
+          <li>Databases: MariaDB, MongoDB</li>
+          <li>Frameworks: Vue.js, Node.js</li>
+          <li>Container management: Docker & Kubernetes</li>
+          <li>DevOps: GitLab</li>
+          <li>Operating systems: Ubuntu, Windows</li>
         </ul>
       </ResumeSection>
     </div>
