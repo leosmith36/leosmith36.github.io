@@ -1,14 +1,46 @@
+<script setup>
+import { ref } from 'vue'
+import Typewriter from '../components/Typewriter.vue'
+
+const text = ref([
+  { text: 'I am a ' },
+  {
+    text: 'software developer',
+    class: 'text-lime-300'
+  },
+  { text: ' who lives in Fargo, ND and works for Voxtelesys.' }
+])
+
+</script>
+
 <template>
-  <div class="flex justify-center text-white">
-    <div class="flex max-md:flex-col justify-center pt-8">
-      <img class="w-64 h-auto rounded mr-5" src="../assets/photo.png" alt="Photo of Leo Smith"/>
-      <div class="flex flex-col space-y-0.5 w-72">
-        <span class="text-6xl font-extrabold tracking-tight">Hi, I'm<br>Leo Smith.</span>
-        <span>
-          A software developer based in Fargo, North Dakota, who is passionate about
-          creating effective, efficient, and elegant code to help companies meet their goals. 
-        </span>
-      </div>
+  <div class="relative text-white">
+    <div class="absolute md:top-16 md:left-24 md:w-2/3">
+      <Transition>
+        <div>
+          <div class="text-5xl mb-3">Hi, I'm <b class="text-lime-300">Leo Smith</b>.</div>
+          <div class="text-3xl">
+            <Typewriter :text="text"/>
+          </div>
+        </div>
+      </Transition>
     </div>
   </div>
 </template>
+
+<style scoped>
+.v-enter-active {
+  transition: opacity 2s ease, transform 2s ease;
+}
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from {
+  transform: translateY(+10rem);
+  opacity: 0;
+}
+.v-leave-to {
+  opacity: 0;
+}
+</style>

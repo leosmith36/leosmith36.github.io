@@ -14,21 +14,21 @@ const open = ref(false)
     <div
       @click="open = !open"
       :class="{ 'rounded-b-md': !open }"
-      class="flex rounded-t-md items-center bg-white p-3 transition hover:bg-gray-400 hover:cursor-pointer"
+      class="flex rounded-t-md items-center p-3 bg-lime-300 transition hover:bg-lime-800 hover:cursor-pointer"
     >
       <font-awesome-icon class="w-6 -ml-1 mr-1" :icon="['fa-solid', open ? 'fa-caret-down' : 'fa-caret-right']"/>
       <h2>{{ title }}</h2>
     </div>
-    <collapse-transition>
-      <div v-show="open" class=" bg-white rounded-b-md">
+    <collapse :show="open">
+      <div class="bg-white rounded-b-md">
         <div class="p-3">
           <slot>
             <div class="space-y-2">
               <div v-for="entry in contents">
                 <b>{{ entry.title }}</b>
                 <div class="flex justify-between">
-                  <p><em>{{ entry.site }}</em>, {{ entry.location }}</p>
-                  <p><em>{{ entry.dates }}</em></p>
+                  <span><em>{{ entry.site }}</em>, {{ entry.location }}</span>
+                  <span><em>{{ entry.dates }}</em></span>
                 </div>
                 <ul class="list-disc">
                   <li v-for="note in entry.details" v-html="note"/>
@@ -38,6 +38,6 @@ const open = ref(false)
           </slot>
         </div>
       </div>
-    </collapse-transition>
+    </collapse>
   </div>
 </template>
