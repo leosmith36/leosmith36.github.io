@@ -59,7 +59,7 @@ watch(() => props.show, value => {
           @leave="onLeave"
         >
           <h3 v-for="(page, index) in sidebarList" :key="index" :data-index="index">
-            <router-link class="link" :to="page.path">{{ page.name }}</router-link>
+            <router-link @click="$emit('clicked')" class="link" :to="page.path">{{ page.name }}</router-link>
           </h3>
         </TransitionGroup>
       </div>
