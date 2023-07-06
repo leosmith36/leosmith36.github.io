@@ -43,6 +43,7 @@ onMounted(async () => {
     await writeText(item.text, newNode)
     
     if (item.underline) newNode.classList.add('underline-transition')
+    if (item.color) newNode.classList.add('color-transition')
     if (item.delayAfter) await delay(item.delayAfter)
   }
 })

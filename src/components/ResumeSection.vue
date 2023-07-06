@@ -20,7 +20,7 @@ const open = ref(false)
       <h2>{{ title }}</h2>
     </div>
     <collapse :show="open">
-      <div class="bg-white rounded-b-md">
+      <div class="bg-gray-300 rounded-b-md">
         <div class="p-3">
           <slot>
             <div class="space-y-2">

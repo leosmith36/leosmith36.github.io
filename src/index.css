@@ -38,11 +38,19 @@ p {
 }
 
 .button {
-  @apply bg-lime-300 rounded-md text-black;
+  @apply bg-lime-500 rounded-md text-black;
 }
 
 .button:hover {
   @apply bg-lime-800;
+}
+
+a:not(.link, .button) {
+  @apply font-bold underline text-lime-600;
+}
+
+a:not(.link, .button):hover {
+  @apply text-lime-400;
 }
 
 .underline-transition {
@@ -50,6 +58,11 @@ p {
   animation: fade-in 0.5s ease-in;
   display: inline-block;
   line-height: 0.9em;
+}
+
+.color-transition {
+  @apply text-lime-300;
+  transition: color 500ms linear;
 }
 
 @keyframes fade-in {
@@ -103,6 +116,18 @@ li {
 
 .list-circle {
   list-style-type: circle;
+}
+
+td, th, table {
+  @apply border px-3 py-2 border-2 border-black text-black;
+}
+
+th {
+  @apply bg-lime-300;
+}
+
+td {
+  @apply bg-white;
 }
 
 /* :root {

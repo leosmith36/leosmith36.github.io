@@ -79,10 +79,10 @@ const internshipContents = ref([
               <li>R (school and research)</li>
             </ul>
           </li>
-          <li>Databases: MariaDB, MongoDB</li>
+          <li>Databases: MariaDB, MongoDB, Redis</li>
           <li>Frameworks: Vue.js, Node.js</li>
           <li>Container management: Docker & Kubernetes</li>
-          <li>DevOps: GitLab</li>
+          <li>Version control: GitLab, GitHub</li>
           <li>Operating systems: Ubuntu, Windows</li>
         </ul>
       </ResumeSection>

@@ -10,8 +10,8 @@
       <p>
         I consider myself an analytical person, and I find enjoyment in leveraging my skills in logic and problem-solving to solve challenging problems 
         in rigorous projects. Outside of my career and educational involvements, I am a dedicated long-distance runner, and I enjoy reading books,
-        engaging in personal coding projects, and independently studying a diverse array of subjects. As such, the main purposes of this website
-        are to document my personal projects, share and reflect on my endeavors, and provide information about my academic and professional background.
+        engaging in personal coding projects, and independently studying a diverse array of subjects. Likewise, the main purposes of this website
+        are to document my personal projects, reflect on my endeavors, and provide information about my academic and professional background.
       </p>
     </div>
   </div>

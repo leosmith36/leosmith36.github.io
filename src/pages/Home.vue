@@ -6,9 +6,14 @@ const text = ref([
   { text: 'I am a ' },
   {
     text: 'software developer',
-    class: 'text-lime-300'
+    color: true,
   },
-  { text: ' who lives in Fargo, ND and works for Voxtelesys.' }
+  { text: ' who lives in West Fargo, ND and works for ' },
+  {
+    text: 'Voxtelesys',
+    color: true
+  },
+  { text: '.' }
 ])
 
 </script>
@@ -20,7 +25,7 @@ const text = ref([
         <div>
           <div class="text-5xl mb-3">Hi, I'm <b class="text-lime-300">Leo Smith</b>.</div>
           <div class="text-3xl">
-            <Typewriter :text="text"/>
+            <Typewriter :text="text" :delay="2000"/>
           </div>
         </div>
       </Transition>
