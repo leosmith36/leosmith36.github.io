@@ -26,7 +26,7 @@ const open = ref(false)
             <div class="space-y-2">
               <div v-for="entry in contents">
                 <b>{{ entry.title }}</b>
-                <div class="flex justify-between">
+                <div class="flex md:justify-between max-md:flex-col">
                   <span><em>{{ entry.site }}</em>, {{ entry.location }}</span>
                   <span><em>{{ entry.dates }}</em></span>
                 </div>

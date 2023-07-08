@@ -10,8 +10,7 @@ const educationContents = ref([
     dates: 'Aug 2018 - May 2023',
     details: [
       "Honors: <em>summa cum laude</em> (4.0 GPA), Dean's List (9 semesters)",
-      'Minors: Biology, Environmental Studies',
-      'Extracurriculars: Cross Country, Track & Field, Student Government'
+      'Extracurriculars: Cross Country, Track & Field'
     ] 
   }
 ])
@@ -51,14 +50,14 @@ const internshipContents = ref([
   <div>
     <div class="flex justify-between items-center">
       <h1>Resumé</h1>
-      <a href="/resume.pdf" download class="px-4 button flex items-center">Download</a>
+      <a href="resume.pdf" download class="px-4 button flex items-center">Download</a>
     </div>
     <div class="space-y-4">
       <ResumeSection title="Education" :contents="educationContents"/>
       <ResumeSection title="Work Experience" :contents="jobContents"/>
       <ResumeSection title="Internships" :contents="internshipContents"/>
       <ResumeSection title="Relevant Coursework">
-        <ul class="list-disc grid grid-cols-2">
+        <ul class="list-disc grid md:grid-cols-2">
           <li>Real Analysis (MATH 330, Spring 2023)</li>
           <li>Modern Algebra (MATH 325, Fall 2022)</li>
           <li>Probability and Statistics (MATH 315, Fall 2022)</li>
@@ -68,15 +67,15 @@ const internshipContents = ref([
         </ul>
       </ResumeSection>
       <ResumeSection title="Skills">
-        <ul class="list-disc">
-          <li>
+        <ul class="list-disc grid md:grid-cols-2">
+          <li class="md:row-span-6">
             Programming languages:
             <ul class="list-circle">
               <li>Javascript (full-stack web development)</li>
               <li>C# (application development)</li>
               <li>Python (machine learning)</li>
               <li>Java (school and personal projects)</li>
-              <li>R (school and research)</li>
+              <li>R (school projects)</li>
             </ul>
           </li>
           <li>Databases: MariaDB, MongoDB, Redis</li>

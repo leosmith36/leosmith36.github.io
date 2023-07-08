@@ -15,18 +15,18 @@ const pages = [
     name: 'Resume',
     path: '/resume'
   },
-  {
-    name: 'Projects',
-    path: '/projects'
-  },
-  {
-    name: 'Reading',
-    path: '/reading'
-  },
-  {
-    name: 'Contact',
-    path: '/contact'
-  }
+  // {
+  //   name: 'Projects',
+  //   path: '/projects'
+  // },
+  // {
+  //   name: 'Reading',
+  //   path: '/reading'
+  // },
+  // {
+  //   name: 'Contact',
+  //   path: '/contact'
+  // }
 ]
 
 const sidebarList = ref([])

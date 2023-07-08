@@ -1,8 +1,9 @@
 <script setup>
-import { ref, onMounted } from 'vue'
+import { onMounted } from 'vue'
 
 const props = defineProps({
   text: Array,
+  options: Object,
   speed: {
     type: Number,
     default: 80,
@@ -32,19 +33,20 @@ onMounted(async () => {
   
   await delay(props.delay)
 
-  for (const item of props.text) {
-    if (item.delayBefore) await delay(item.delayBefore)
-    if (item.newLine) dest.innerHTML += '<br/><br/>'
+  for (const [index, text] of props.text.entries()) {
+    const options = props.options[index] || {}
+
+    if (options.delayBefore) await delay(options.delayBefore)
+    if (options.newLine) dest.innerHTML += '<br/><br/>'
 
     const newNode = document.createElement('span')
     dest.appendChild(newNode)
-    newNode.classList = item.class || ''
+    newNode.classList = options.classes || ''
 
-    await writeText(item.text, newNode)
+    await writeText(text, newNode)
     
-    if (item.underline) newNode.classList.add('underline-transition')
-    if (item.color) newNode.classList.add('color-transition')
-    if (item.delayAfter) await delay(item.delayAfter)
+    if (options.transitionClass) newNode.classList.add(options.transitionClass)
+    if (options.delayAfter) await delay(options.delayAfter)
   }
 })
 </script>

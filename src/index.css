@@ -60,8 +60,13 @@ a:not(.link, .button):hover {
   line-height: 0.9em;
 }
 
-.color-transition {
+.color-transition-lime {
   @apply text-lime-300;
+  transition: color 500ms linear;
+}
+
+.color-transition-sky {
+  @apply text-sky-300;
   transition: color 500ms linear;
 }
 
