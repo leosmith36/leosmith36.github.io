@@ -19,10 +19,10 @@ const pages = [
   //   name: 'Projects',
   //   path: '/projects'
   // },
-  // {
-  //   name: 'Reading',
-  //   path: '/reading'
-  // },
+  {
+    name: 'Reading',
+    path: '/reading'
+  },
   // {
   //   name: 'Contact',
   //   path: '/contact'

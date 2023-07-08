@@ -42,7 +42,7 @@ p {
 }
 
 a:not(.link, .button) {
-  @apply font-bold underline text-lime-600;
+  @apply font-bold underline text-lime-600 transition;
 }
 
 a:not(.link, .button):hover {
@@ -120,7 +120,7 @@ li {
 }
 
 td, th, table {
-  @apply border px-3 py-2 border-2 border-black text-black;
+  @apply border px-3 py-2 border-2 border-black text-black transition-all;
 }
 
 th {
@@ -129,6 +129,10 @@ th {
 
 td {
   @apply bg-white;
+}
+
+select {
+  @apply text-black hover:cursor-pointer;
 }
 
 /* :root {
