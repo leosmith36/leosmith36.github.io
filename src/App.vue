@@ -1,6 +1,10 @@
 <script setup>
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
+import { useRoute } from 'vue-router'
+import { computed } from 'vue'
+
+const currentRoute = computed(() => useRoute().name)
 </script>
 
 <template>
@@ -8,12 +12,14 @@ import Footer from './components/Footer.vue'
     <Header/>
     <div class="wrapper">
       <router-view v-slot="{ Component }">
-        <Transition appear mode="out-in">
+        <Transition mode="out-in">
           <component :is="Component"/>
         </Transition>
       </router-view>
     </div>
-    <Footer/>
+    <Transition>
+      <Footer v-if="currentRoute !== 'Home'"/>
+    </Transition>
   </div>
 </template>
 
