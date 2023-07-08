@@ -17,7 +17,7 @@ const currentRoute = computed(() => useRoute().name)
         </Transition>
       </router-view>
     </div>
-    <Transition>
+    <Transition appear>
       <Footer v-if="currentRoute !== 'Home'"/>
     </Transition>
   </div>
