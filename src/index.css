@@ -38,11 +38,7 @@ p {
 }
 
 .button {
-  @apply bg-lime-500 rounded-md text-black;
-}
-
-.button:hover {
-  @apply bg-lime-800;
+  @apply bg-lime-500 rounded-md text-black transition hover:bg-lime-800 ;
 }
 
 a:not(.link, .button) {

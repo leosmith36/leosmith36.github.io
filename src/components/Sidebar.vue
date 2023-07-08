@@ -12,7 +12,7 @@ const pages = [
     path: '/about'
   },
   {
-    name: 'Resume',
+    name: 'Resumé',
     path: '/resume'
   },
   // {
