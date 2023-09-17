@@ -15,10 +15,10 @@ const pages = [
     name: 'Resumé',
     path: '/resume'
   },
-  // {
-  //   name: 'Projects',
-  //   path: '/projects'
-  // },
+  {
+    name: 'Projects',
+    path: '/projects'
+  },
   {
     name: 'Reading',
     path: '/reading'

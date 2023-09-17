@@ -6,6 +6,7 @@ import Contact from './pages/Contact.vue'
 import Resume from './pages/Resume.vue'
 import Reading from './pages/Reading.vue'
 import Blog from './pages/Blog.vue'
+import UrlShortener from './projects/UrlShortener.vue'
 
 const routes = [
 	{
@@ -42,6 +43,11 @@ const routes = [
 		path: '/blog',
 		name: 'Blog',
 		component: Blog
+	},
+	{
+		path: '/url_shortener',
+		name: 'URL Shortener',
+		component: UrlShortener
 	},
 	{
 		path: '/:catchAll(.*)',

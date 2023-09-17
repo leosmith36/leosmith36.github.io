@@ -1,11 +1,16 @@
 <script setup>
 const props = defineProps({
-  title: String
+  title: String,
+  description: String,
+  path: String
 })
 </script>
 
 <template>
   <div>
-    <h2>{{ title }}</h2>
+    <div>
+      <h2><router-link :to="path">{{ title }}</router-link></h2>
+      <p>{{ description }}</p>
+    </div>
   </div>
 </template>

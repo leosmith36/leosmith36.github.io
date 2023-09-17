@@ -4,7 +4,7 @@ import './index.css'
 import router from './router'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faLinkedin, faFacebook, faGithub, faGit } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faBars, faX, faCaretRight, faCaretDown } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faBars, faX, faCaretRight, faCaretDown, faCopy } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import Collapse from './components/Collapse.vue'
 
@@ -16,6 +16,7 @@ library.add(faBars)
 library.add(faX)
 library.add(faCaretDown)
 library.add(faCaretRight)
+library.add(faCopy)
 
 const app = createApp(App)
 

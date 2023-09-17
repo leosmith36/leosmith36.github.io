@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  @apply bg-stone-700;
+  background-color: #212125;
 }
 
 html {
@@ -12,7 +12,7 @@ html {
 
 body {
   font-size: 18px;
-  @apply text-lime-300;
+  color: #A3DE83;
 }
 
 h1 {
@@ -57,12 +57,7 @@ a:not(.link, .button):hover {
 }
 
 .color-transition-lime {
-  @apply text-lime-300;
-  transition: color 500ms linear;
-}
-
-.color-transition-sky {
-  @apply text-sky-300;
+  color: #A3DE83;
   transition: color 500ms linear;
 }
 
@@ -133,6 +128,18 @@ tbody tr {
 
 select {
   @apply text-black hover:cursor-pointer;
+}
+
+input {
+  @apply text-black;
+}
+
+.background-light-green {
+  background-color: #A3DE83;
+}
+
+.background-green {
+  background-color: #239D60;
 }
 
 /* :root {

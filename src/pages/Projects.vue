@@ -6,7 +6,7 @@ import ProjectEntry from '../components/ProjectEntry.vue'
   <div>
     <h1>Projects</h1>
     <div class="grid grid-cols-2">
-      <ProjectEntry title="Retail Rescue Routing"/>
+      <ProjectEntry title="URL Shortener" path="/url_shortener"/>
     </div>
   </div>
 </template>

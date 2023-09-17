@@ -14,7 +14,7 @@ const open = ref(false)
     <div
       @click="open = !open"
       :class="{ 'rounded-b-md': !open }"
-      class="flex rounded-t-md items-center p-3 bg-lime-300 transition hover:bg-lime-800 hover:cursor-pointer"
+      class="flex rounded-t-md items-center p-3 background-light-green transition hover:background-green hover:cursor-pointer"
     >
       <font-awesome-icon class="w-6 -ml-1 mr-1" :icon="['fa-solid', open ? 'fa-caret-down' : 'fa-caret-right']"/>
       <h2>{{ title }}</h2>
