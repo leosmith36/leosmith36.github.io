@@ -1,10 +1,5 @@
 <script setup>
 import Header from './components/Header.vue'
-import Footer from './components/Footer.vue'
-import { useRoute } from 'vue-router'
-import { computed } from 'vue'
-
-const currentRoute = computed(() => useRoute().name)
 </script>
 
 <template>
@@ -17,17 +12,23 @@ const currentRoute = computed(() => useRoute().name)
         </Transition>
       </router-view>
     </div>
-    <Transition appear>
-      <Footer v-if="currentRoute !== 'Home'"/>
-    </Transition>
   </div>
 </template>
 
 <style scoped>
-.v-enter-active, .v-leave-active {
-  transition: opacity 0.5s ease;
+.wrapper {
+  @apply flex-grow;
 }
-.v-enter-from, .v-leave-to {
-  opacity: 0;
+
+@media only screen and (min-width: 768px) {
+  .wrapper {
+    margin: 2rem 12%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    margin: 1rem 2rem;
+  }
 }
 </style>

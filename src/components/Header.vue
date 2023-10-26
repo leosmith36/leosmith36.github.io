@@ -1,25 +1,30 @@
-<script setup>
-import { ref } from 'vue'
-import Sidebar from './Sidebar.vue'
-
-const collapsed = ref(true)
-
-</script>
-
 <template>
   <div>
     <header>
       <nav>
-        <div class="flex pt-5 px-5 pb-2 justify-between">
-          <router-link to="/">
-            <img class="w-32 h-auto" src="../assets/logo.png" alt="Leo Smith Logo"/>
-          </router-link>
-          <button class="text-inherit link" type="button" @click="collapsed = !collapsed">
-            <font-awesome-icon :icon="['fas', collapsed ? 'bars' : 'x']"/>
-          </button>
+        <div class="flex items-center p-3 max-md:flex-col max-md:space-y-1">
+          <div class="basis-1/3 flex">
+            <router-link to="/"><h1 class="font-extrabold">Leo Smith</h1></router-link>
+          </div>
+          <div class="basis-1/3 flex justify-center space-x-5 items-center">
+            <router-link to="/about" class="link">About</router-link>
+            <!-- <router-link to="/resume" class="link">Resume</router-link> -->
+          </div>
+          <div class="basis-1/3 flex justify-end space-x-3">
+            <a href="mailto:leosmith36@yahoo.com"><font-awesome-icon icon="fa-solid fa-envelope"/></a>
+            <a href="https://www.linkedin.com/in/leomsmith"><font-awesome-icon icon="fa-brands fa-linkedin"/></a>
+            <a href="https://www.facebook.com/leosmith36"><font-awesome-icon icon="fa-brands fa-facebook"/></a>
+            <a href="https://github.com/leosmith36"><font-awesome-icon icon="fa-brands fa-github"/></a>
+          </div>
         </div>
       </nav>
     </header>
-    <Sidebar :show="!collapsed" @clicked="collapsed = true" class="absolute right-0 mr-2"/>
+    <hr>
   </div>
 </template>
+
+<style scoped>
+hr {
+  color: white;
+}
+</style>

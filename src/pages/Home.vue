@@ -1,41 +1,10 @@
-<script setup>
-import { ref } from 'vue'
-import Typewriter from '../components/Typewriter.vue'
-
-const text = ref([
-  'I am a ',
-  'software developer',
-  ' from Fargo, North Dakota whose goal is to solve real-life problems by writing ',
-  'robust',
-  ', ',
-  'efficient',
-  ', and ',
-  'elegant',
-  ' code.'
-])
-
-const options = ref({
-  1: { transitionClass: 'color-transition-lime' },
-  3: { transitionClass: 'color-transition-sky' },
-  5: { transitionClass: 'color-transition-sky' },
-  7: { transitionClass: 'color-transition-sky' }
-})
-
-</script>
-
 <template>
-  <div class="relative text-white">
-    <div class="absolute md:top-16 md:left-24 md:max-lg:w-2/3 lg:w-1/2">
-      <Transition>
-        <div>
-          <div class="text-5xl mb-3">Hi, I'm <b class="text-lime-300">Leo Smith</b>.</div>
-          <div class="text-3xl">
-            <Typewriter :text="text" :options="options" :delay="1500" :speed="60"/>
-          </div>
-        </div>
-      </Transition>
+  <Transition class="text-center">
+    <div>
+      <div class="text-7xl font-black">Leo Smith</div>
+      <div class="text-2xl my-2">Software engineer.</div>
     </div>
-  </div>
+  </Transition>
 </template>
 
 <style scoped>

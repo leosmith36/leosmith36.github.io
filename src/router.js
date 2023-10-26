@@ -18,31 +18,31 @@ const routes = [
 		name: 'About',
 		component: About,
 	},
-	{
-		path: '/projects',
-		name: 'Projects',
-		component: Projects,
-	},
-	{
-		path: '/contact',
-		name: 'Contact',
-		component: Contact,
-	},
-	{
-		path: '/resume',
-		name: 'Resume',
-		component: Resume,
-	},
-	{
-		path: '/reading',
-		name: 'Reading',
-		component: Reading,
-	},
-	{
-		path: '/blog',
-		name: 'Blog',
-		component: Blog
-	},
+	// {
+	// 	path: '/projects',
+	// 	name: 'Projects',
+	// 	component: Projects,
+	// },
+	// {
+	// 	path: '/contact',
+	// 	name: 'Contact',
+	// 	component: Contact,
+	// },
+	// {
+	// 	path: '/resume',
+	// 	name: 'Resume',
+	// 	component: Resume,
+	// },
+	// {
+	// 	path: '/reading',
+	// 	name: 'Reading',
+	// 	component: Reading,
+	// },
+	// {
+	// 	path: '/blog',
+	// 	name: 'Blog',
+	// 	component: Blog
+	// },
 	{
 		path: '/:catchAll(.*)',
 		redirect: '/'
