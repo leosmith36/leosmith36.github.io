@@ -8,7 +8,7 @@
           </div>
           <div class="basis-1/3 flex justify-center space-x-5 items-center">
             <router-link to="/about" class="link">About</router-link>
-            <!-- <router-link to="/resume" class="link">Resume</router-link> -->
+            <!-- <router-link to="/employment" class="link">Employment</router-link> -->
           </div>
           <div class="basis-1/3 flex justify-end space-x-3">
             <a href="mailto:leosmith36@yahoo.com"><font-awesome-icon icon="fa-solid fa-envelope"/></a>

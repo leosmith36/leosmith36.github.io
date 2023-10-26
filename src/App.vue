@@ -31,4 +31,12 @@ import Header from './components/Header.vue'
     margin: 1rem 2rem;
   }
 }
+
+.v-enter-active, .v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from, .v-leave-to {
+  opacity: 0;
+}
 </style>
