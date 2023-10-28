@@ -8,7 +8,7 @@
         maintain and improve the company's customer portal, support HUD, billing web services, and voice applications.
       </p>
       <p>
-        In my free time, I am a dedicated long-distance runner who is striving to one day quality for the Olympic trials in the marathon.
+        In my free time, I am a dedicated long-distance runner who is striving to one day quality for the US Olympic Trials in the marathon.
       </p>
     </div>
   </div>
