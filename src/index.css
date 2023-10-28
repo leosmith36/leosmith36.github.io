@@ -15,13 +15,29 @@ body {
 }
 
 h1 {
-  @apply text-3xl
+  @apply text-3xl;
+}
+
+h2 {
+  @apply text-xl;
+}
+
+h3 {
+  @apply text-lg;
 }
 
 .link {
   @apply transition hover:text-slate-500 cursor-pointer;
 }
 
+.button {
+  @apply transition hover:bg-slate-300 cursor-pointer;
+}
+
 a {
   @apply link;
+}
+
+li {
+  @apply list-disc ml-6;
 }
