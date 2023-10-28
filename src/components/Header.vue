@@ -2,7 +2,7 @@
   <div>
     <header>
       <nav>
-        <div class="flex items-center p-3 max-md:flex-col max-md:space-y-1">
+        <div class="flex items-center py-3 px-5 max-md:flex-col max-md:space-y-1">
           <div class="basis-1/3 flex">
             <router-link to="/"><h1 class="font-extrabold">Leo Smith</h1></router-link>
           </div>
