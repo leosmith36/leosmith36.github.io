@@ -22,7 +22,7 @@ import EmploymentSection from '../components/sections/EmploymentSection.vue'
             with customers and with other employees by routing calls over the internet instead of using traditional phone lines.
           </p>
           <p>
-            At Voxtelesys, I have been heavily involved in several areas, including the customer portal, the support team's HUD,
+            At Voxtelesys, I have been heavily involved in several areas, including the customer portal, the support team's display,
             and numerous applications on the web and voice stacks. Through my work, I have gained experience in a variety of technologies, especially
             Vue.js, Node.js, MariaDB, MongoDB, Docker, C#, and Golang, to name a few.
           </p>
@@ -40,19 +40,19 @@ import EmploymentSection from '../components/sections/EmploymentSection.vue'
                 <span class="font-bold">Web Service Migrations: </span>
                 I migrated the billing and payment web servers from Ruby to Node.js to improve the readability and performance of those applications,
                 as well as make them consistent with the rest of the code base. To boost maintanability, I also implemented a robust
-                testing framework which helps ensure that future code changes preserve the existing functionality.
+                testing framework for these applications which helps ensure that future code changes preserve the existing functionality.
               </li>
               <li>
                 <span class="font-bold">Batch Depositing: </span>
-                I implemented a new database schema which allows accounting to deposit payments by settled batch using the Voxtelesys .NET
+                I implemented a new database schema which allows accounting to deposit payments by settled batch using the Voxtelesys
                 billing application. This feature saved the accounting team quite a bit of time, since they no longer needed to manually locate the transactions
-                within each batch. While working on this project, I had to ensure that each payment was validated against the payment gateway provider before
+                within each batch. While working on this project, I was tasked with ensuring that each payment was validated against the payment gateway provider before
                 it was associated with a batch.
               </li>
               <li>
                 <span class="font-bold">Call Troubleshooting: </span>
                  Previously, customers were unable to troubleshoot calls by downloading the packet captures from the portal, and neither support nor
-                 customers were able to easily view the SIP messages in a call. Here, I built a front-end display in the HUD and portal which allows users to
+                 customers were able to easily view the SIP messages in a call. I built a front-end display for customers and support which allows users to
                  view SIP messages in the browser using a ladder diagram, download packet captures, and search for specific calls. In addition, I implemented
                  automated call analysis, which locates any "red flags" in SIP messages that may lead to audio issues.
               </li>
@@ -80,7 +80,7 @@ import EmploymentSection from '../components/sections/EmploymentSection.vue'
           </li>
           <li>
             <span class="font-bold">Address Validation: </span>
-            Validating addresses is one of the first things support does when adding new customers. I integrated the HUD with Google's address
+            Validating addresses is one of the first things support does when adding new customers. I utilized with Google's address
             validation API to streamline the process of validating an address before adding it to an account.
           </li>
           <li>
@@ -101,7 +101,7 @@ import EmploymentSection from '../components/sections/EmploymentSection.vue'
         I was involved in the Mamivand lab, where I employed machine learning to predict material properties from microstructure images.
         Specifically, I investigated the effects of several parameters on a process called spinodal decomposition, which is used to strengthen
         metal alloys. I used computing clusters to run simulations to create microstructure images, and once I had a large enough image dataset,
-        I developed Python scripts to train neural networks on these images to predict their parameters.
+        I then developed Python scripts to train neural networks on these images to predict their parameters.
       </EmploymentSection>
       <EmploymentSection
         title="Organic Chemistry Researcher"
