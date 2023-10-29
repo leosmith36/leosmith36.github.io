@@ -6,7 +6,7 @@ import BookSection from '../../components/sections/BookSection.vue'
   <div>
     <h1 class="header">Reading</h1>
     <div class="space-y-3">
-      <BookSection title="Books Read in 2023"/>
+      <BookSection title="Books Read in 2023" file="books_2023.csv"/>
     </div>
   </div>
 </template>

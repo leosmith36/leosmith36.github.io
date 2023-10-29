@@ -6,16 +6,17 @@ const props = defineProps({
   file: String
 })
 
-const books = ref([])
+const races = ref([])
 
 onMounted(async () => {
   const file = await fetch(props.file)
   const fileText = await file.text()
   
-  books.value = fileText.split('\n').map(row => {
+  races.value = fileText.split('\n').map(row => {
     const parsed = row.split(',')
+    console.log(row)
 
-    return { title: parsed[0], author: parsed[1], year: parsed[2] }
+    return { name: parsed[0], date: parsed[1], time: parsed[2] }
   })
 })
 </script>
@@ -27,8 +28,8 @@ onMounted(async () => {
     </template>
     <template #body>
       <ul>
-        <li v-for="{ title, author, year } in books">
-          <p><span class="font-bold">{{ title }}</span>, <span class="italic">{{ author }}</span>, {{ year }}</p>
+        <li v-for="{ name, date, time } in races">
+          <p><span class="font-bold">{{ name }}</span> ({{ date }}): {{ time }}</p>
         </li>
       </ul>      
     </template>
