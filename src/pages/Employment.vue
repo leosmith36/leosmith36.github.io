@@ -23,7 +23,7 @@ import EmploymentSection from '../components/sections/EmploymentSection.vue'
           </p>
           <p>
             At Voxtelesys, I have been heavily involved in several areas, including the customer portal, the support team's HUD,
-            and myriad applications on the web and voice stack. Through my work, I have gained experience in a variety of technologies, especially
+            and numerous applications on the web and voice stacks. Through my work, I have gained experience in a variety of technologies, especially
             Vue.js, Node.js, MariaDB, MongoDB, Docker, C#, and Golang, to name a few.
           </p>
           <p>
