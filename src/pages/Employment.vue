@@ -109,7 +109,7 @@ import EmploymentSection from '../components/sections/EmploymentSection.vue'
         dates="Jun 2021 - Aug 2021"
       >
         At Scripps, I participated in an NSF-funded Summer Undergraduate Research Fellowship (SURF) in the Shenvi lab. This research took place in
-        the field of organic synthesis, where I assisted with developing a synthesis route for an potentially therapeutic alkaloid molecule. I utilized
+        the field of organic synthesis, where I assisted with developing a synthesis route for a potentially therapeutic alkaloid molecule. I utilized
         several synthesis and analysis techniques in organic chemistry, such as thin layer chromatography (TLC), column chromatography, 
         nuclear magnetic resonance (NMR), and liquid chromatography with mass spectrometry (LCMS). My biggest accomplishment at Scripps was the optimization
         of a Suzuki coupling reaction which helped produce a key intermediate for the target molecule.
