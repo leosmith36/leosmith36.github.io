@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="mb-3">About Me</h1>
+    <h1 class="header">About Me</h1>
     <div class="space-y-4">
       <p>
         I am from West Fargo, ND. In May 2023, I graduated from Concordia College in Moorhead, MN with a Bachelor of Arts

@@ -1,10 +1,13 @@
 <script setup>
-import EmploymentSection from '../components/EmploymentSection.vue'
+import EmploymentSection from '../components/sections/EmploymentSection.vue'
 </script>
 
 <template>
   <div>
-    <h1 class="mb-3">Employment</h1>
+    <div class="md:flex justify-between header max-md:space-y-3">
+      <h1>Employment</h1>
+      <div><a class="bg-white rounded text-black p-2 button" href="resume.pdf" download>Download Resume</a></div>
+    </div>
     <h2 class="mb-3 mt-6 italic">Full-Time Jobs</h2>
     <div class="space-y-4">
       <EmploymentSection
@@ -108,7 +111,7 @@ import EmploymentSection from '../components/EmploymentSection.vue'
         At Scripps, I participated in an NSF-funded Summer Undergraduate Research Fellowship (SURF) in the Shenvi lab. This research took place in
         the field of organic synthesis, where I assisted with developing a synthesis route for an potentially therapeutic alkaloid molecule. I utilized
         several synthesis and analysis techniques in organic chemistry, such as thin layer chromatography (TLC), column chromatography, 
-        nuclear magnetic resonance (NMR), and liquid chromatography with mass spectrometry (LCMS). My biggest accomplishment here was the optimization
+        nuclear magnetic resonance (NMR), and liquid chromatography with mass spectrometry (LCMS). My biggest accomplishment at Scripps was the optimization
         of a Suzuki coupling reaction which helped produce a key intermediate for the target molecule.
       </EmploymentSection>
     </div>

@@ -3,10 +3,11 @@ import App from './App.vue'
 import './index.css'
 import router from './router'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faLinkedin, faFacebook, faGithub, faGit } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faBars, faX, faCaretRight, faCaretDown } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedin, faFacebook, faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope, faBars, faX, faCaretRight, faCaretDown, faPersonRunning, faBook } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import Collapse from './components/Collapse.vue'
+import Collapse from './components/common/Collapse.vue'
+import CollapsibleSection from './components/common/CollapsibleSection.vue'
 
 library.add(faLinkedin)
 library.add(faFacebook)
@@ -16,11 +17,14 @@ library.add(faBars)
 library.add(faX)
 library.add(faCaretDown)
 library.add(faCaretRight)
+library.add(faPersonRunning)
+library.add(faBook)
 
 const app = createApp(App)
 
 app.component('font-awesome-icon', FontAwesomeIcon)
 app.component('collapse', Collapse)
+app.component('collapsible-section', CollapsibleSection)
 
 app.use(router)
 

@@ -31,13 +31,29 @@ h3 {
 }
 
 .button {
-  @apply transition hover:bg-slate-300 cursor-pointer;
+  @apply transition hover:bg-slate-300 cursor-pointer bg-white rounded text-black p-2;
 }
 
-a {
-  @apply link;
+button {
+  @apply button bg-white text-black p-2 rounded;
 }
 
 li {
   @apply list-disc ml-6;
+}
+
+.header {
+  @apply mb-3;
+}
+
+td, th, table {
+  @apply border p-3 border-black;
+}
+
+th {
+  @apply bg-slate-400;
+}
+
+tr {
+  @apply bg-slate-200;
 }
