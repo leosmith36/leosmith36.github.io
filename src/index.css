@@ -30,6 +30,10 @@ h3 {
   @apply transition hover:text-slate-500 cursor-pointer;
 }
 
+.text-link {
+  @apply text-slate-300 link underline font-semibold;
+}
+
 .button {
   @apply transition hover:bg-slate-300 cursor-pointer bg-white rounded text-black p-2;
 }

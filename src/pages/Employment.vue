@@ -54,7 +54,7 @@ import EmploymentSection from '../components/sections/EmploymentSection.vue'
                  Previously, customers were unable to troubleshoot calls by downloading the packet captures from the portal, and neither support nor
                  customers were able to easily view the SIP messages in a call. I built a front-end display for customers and support which allows users to
                  view SIP messages in the browser using a ladder diagram, download packet captures, and search for specific calls. In addition, I implemented
-                 automated call analysis, which locates any "red flags" in SIP messages that may lead to audio issues.
+                 an automated call analysis feature, which locates and displays "red flags" in SIP messages that may lead to audio issues.
               </li>
             </ul>
           </p>
