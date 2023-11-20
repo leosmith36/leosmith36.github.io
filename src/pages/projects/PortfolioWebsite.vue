@@ -7,7 +7,7 @@
     <div class="space-y-3">
       <p>
         My portfolio website is intended to be a source of information about my background as well as a method of documenting my projects
-        and hobbies.
+        and interests.
       </p>
       <p>Technologies used:</p>
       <ul>

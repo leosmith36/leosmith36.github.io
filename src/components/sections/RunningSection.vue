@@ -14,9 +14,11 @@ onMounted(async () => {
   
   races.value = fileText.split('\n').map(row => {
     const parsed = row.split(',')
-    console.log(row)
 
-    return { name: parsed[0], date: parsed[1], time: parsed[2] }
+    const [name, date, time, place, url] = parsed
+    console.log(url)
+
+    return { name, date, time, place, url }
   })
 })
 </script>
@@ -28,8 +30,8 @@ onMounted(async () => {
     </template>
     <template #body>
       <ul>
-        <li v-for="{ name, date, time } in races">
-          <p><span class="font-bold">{{ name }}</span> ({{ date }}): {{ time }}</p>
+        <li v-for="{ name, date, time, place, url } in races">
+          <p><a class="text-link-dark" :href="url">{{ name }}</a> ({{ date }}): {{ time }}, {{ place }} place</p>
         </li>
       </ul>      
     </template>

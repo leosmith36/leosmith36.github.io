@@ -2,9 +2,9 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from './pages/Home.vue'
 import About from './pages/About.vue'
 import Employment from './pages/Employment.vue'
-import Hobbies from './pages/Hobbies.vue'
-import Running from './pages/hobbies/Running.vue'
-import Reading from './pages/hobbies/Reading.vue'
+import Interests from './pages/Interests.vue'
+import Running from './pages/interests/Running.vue'
+import Reading from './pages/interests/Reading.vue'
 import Projects from './pages/Projects.vue'
 import PortfolioWebsite from './pages/projects/PortfolioWebsite.vue'
 
@@ -35,9 +35,9 @@ const routes = [
 		component: PortfolioWebsite,
 	},
 	{
-		path: '/hobbies',
-		name: 'Hobbies',
-		component: Hobbies
+		path: '/interests',
+		name: 'Interests',
+		component: Interests
 	},
 	{
 		path: '/running',
