@@ -1,5 +1,8 @@
 <script setup>
 import Header from './components/Header.vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
 </script>
 
 <template>
@@ -8,7 +11,7 @@ import Header from './components/Header.vue'
     <div class="wrapper">
       <router-view v-slot="{ Component }">
         <Transition mode="out-in">
-          <component :is="Component"/>
+          <component :key="route.path" :is="Component"/>
         </Transition>
       </router-view>
     </div>
