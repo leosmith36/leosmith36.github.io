@@ -1,0 +1,1 @@
+import{_ as o,r,o as a,c as n,a as e,b as l,w as s,d as c}from"./index-459ca06d.js";const _={};function i(u,d){const t=r("router-link");return a(),n("div",null,[e("ul",null,[e("li",null,[l(t,{class:"text-link",to:"/learning/algorithms-chapter-1"},{default:s(()=>[c("Chapter 1")]),_:1})])])])}const p=o(_,[["render",i]]);export{p as default};
