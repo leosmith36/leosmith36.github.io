@@ -1,1 +1,0 @@
-import{_ as o,o as e,c as s,a as t}from"./index-d434c217.js";const c={},n=t("h2",{class:"mb-3"},"Introduction to Algorithms, Chapter 1: The Role of Algorithms in Computing",-1),r=t("h3",{class:"italic"},"1.1 Algorithms",-1),l=t("p",null,null,-1),a=[n,r,l];function i(_,h){return e(),s("div",null,a)}const m=o(c,[["render",i]]);export{m as default};
