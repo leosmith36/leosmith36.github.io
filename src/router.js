@@ -5,10 +5,8 @@ import Employment from './pages/Employment.vue'
 import Interests from './pages/Interests.vue'
 import Running from './pages/interests/Running.vue'
 import Reading from './pages/interests/Reading.vue'
-import Learning from './pages/interests/Learning.vue'
 import Projects from './pages/Projects.vue'
 import PortfolioWebsite from './pages/projects/PortfolioWebsite.vue'
-import DynamicPage from './pages/DynamicPage.vue'
 
 const routes = [
 	{
@@ -50,16 +48,6 @@ const routes = [
 		path: '/reading',
 		name: 'Reading',
 		component: Reading
-	},
-	{
-		path: '/learning',
-		name: 'Learning',
-		component: Learning
-	},
-	{
-		path: '/:category/:pageName',
-		name: 'DynamicPage',
-		component: DynamicPage
 	},
 	{
 		path: '/:catchAll(.*)',
