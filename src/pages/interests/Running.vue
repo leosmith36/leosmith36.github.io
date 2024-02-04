@@ -9,8 +9,6 @@ import RunningSection from '../../components/sections/RunningSection.vue'
       <div class="space-y-2">
         <h2>Upcoming Races:</h2>
         <ul>
-          <li>Cobber Open (1/19/24)</li>
-          <li>UND Open (1/26/24)</li>
           <li>SDSU Indoor Classic (2/9/24)</li>
           <li><a class="text-link" href="https://www.tcmevents.org/alleventsandraces/getingear">Get In Gear Half Marathon</a> (4/29/24)</li>
           <li><a class="text-link" href="https://fargomarathon.com/">Fargo Marathon</a> (6/1/24)</li>
@@ -22,6 +20,7 @@ import RunningSection from '../../components/sections/RunningSection.vue'
       <div class="space-y-2">
         <h2>Past Races</h2>
         <RunningSection title="Races in 2023" file="races_2023.csv"/>
+        <RunningSection title="Races in 2024" file="races_2024.csv"/>
       </div>
     </div>
   </div>

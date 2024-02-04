@@ -2,12 +2,13 @@
 const props = defineProps({
   title: String,
   location: String,
-  dates: String
+  dates: String,
+  disabled: Boolean
 })
 </script>
 
 <template>
-  <collapsible-section>
+  <collapsible-section :disabled="disabled">
     <template #head>
       <div class="md:flex items-center w-full">
         <div>

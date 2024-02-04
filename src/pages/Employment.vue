@@ -11,9 +11,15 @@ import EmploymentSection from '../components/sections/EmploymentSection.vue'
     <h2 class="mb-3 mt-6 italic">Full-Time Jobs</h2>
     <div class="space-y-4">
       <EmploymentSection
+        title="Software Engineer 2"
+        location="Voxtelesys, Fargo, ND"
+        dates="Dec 2023 - Present"
+        disabled
+      />
+      <EmploymentSection
         title="Software Engineer 1"
         location="Voxtelesys, Fargo, ND"
-        dates="May 2023 - Present"
+        dates="May 2023 - Dec 2023"
       >
         <div class="space-y-3">
           <p>

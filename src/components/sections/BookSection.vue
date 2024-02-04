@@ -13,7 +13,7 @@ onMounted(async () => {
   const fileText = await file.text()
   
   books.value = fileText.split('\n').map(row => {
-    const parsed = row.split(',')
+    const parsed = row.split(';')
 
     return { title: parsed[0], author: parsed[1], year: parsed[2] }
   })
