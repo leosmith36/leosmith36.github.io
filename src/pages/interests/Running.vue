@@ -9,7 +9,6 @@ import RunningSection from '../../components/sections/RunningSection.vue'
       <div class="space-y-2">
         <h2>Upcoming Races:</h2>
         <ul>
-          <li>SDSU Indoor Classic (2/9/24)</li>
           <li><a class="text-link" href="https://www.tcmevents.org/alleventsandraces/getingear">Get In Gear Half Marathon</a> (4/29/24)</li>
           <li><a class="text-link" href="https://fargomarathon.com/">Fargo Marathon</a> (6/1/24)</li>
           <li><a class="text-link" href="https://www.tcmevents.org/alleventsandraces/medtronictwincitiesmarathonweekend/tc10mile">Medtronic Twin Cities</a> 10 Mile (10/6/24)</li>
