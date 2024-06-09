@@ -11,26 +11,22 @@ import EmploymentSection from '../components/sections/EmploymentSection.vue'
     <h2 class="mb-3 mt-6 italic">Full-Time Jobs</h2>
     <div class="space-y-4">
       <EmploymentSection
-        title="Software Engineer 2"
+        title="Software Engineer"
         location="Voxtelesys, Fargo, ND"
-        dates="Dec 2023 - Present"
-        disabled
-      />
-      <EmploymentSection
-        title="Software Engineer 1"
-        location="Voxtelesys, Fargo, ND"
-        dates="May 2023 - Dec 2023"
+        dates="May 2023 - Present"
       >
         <div class="space-y-3">
+          <p><b>Titles held:</b> Software Engineer 1 (May 2023 - Dec 2023), Software Engineer 2 (Dec 2023 - Present)</p>
           <p>
-            Voxtelesys is an internet telephony service provier (ITSP) whose products enable voice communication
-            for companies of all sizes. In essence, telephony services provided by Voxtelsys allow companies to communicate
+            Voxtelesys is an internet telephony service provier (ITSP) whose products enable communication
+            for companies of all sizes. In essence, the services provided by Voxtelsys allow companies to communicate
             with customers and with other employees by routing calls over the internet instead of using traditional phone lines.
           </p>
           <p>
-            At Voxtelesys, I have been heavily involved in several areas, including the customer portal, the support team's display,
-            and numerous applications on the web and voice stacks. Through my work, I have gained experience in a variety of technologies, especially
-            Vue.js, Node.js, MariaDB, MongoDB, Docker, C#, and Golang, to name a few.
+            My work at Voxtelesys involves maintaining and improving numerous projects across the company's technology stack, such as the customer portal and company HUD.
+            For most of my time at Voxtelesys, my focus has been on the billing and payment web servers, where I have implemented optimizations and features to serve the needs
+            of the accounting team. More recently, my work has shifted towards expanding the voice applications offered by Voxtelesys. These applications include the IVR, voice API,
+            call recordings, and our SIP proxy servers for inbound and outbound calls.
           </p>
           <p>
             Here are some of my key projects:
@@ -44,9 +40,10 @@ import EmploymentSection from '../components/sections/EmploymentSection.vue'
               </li>
               <li>
                 <span class="font-bold">Web Service Migrations: </span>
-                I migrated the billing and payment web servers from Ruby to Node.js to improve the readability and performance of those applications,
-                as well as make them consistent with the rest of the code base. To boost maintanability, I also implemented a robust
-                testing framework for these applications which helps ensure that future code changes preserve the existing functionality.
+                I migrated the billing and payment web servers from to Node.js to improve the readability and performance of those applications,
+                as well as make them consistent with the rest of the code base. To boost maintainability, I also implemented a robust
+                testing framework for these applications which helps ensure that future code changes preserve the existing functionality. Altogether, this overhaul resulted in
+                the time for monthly billing being cut in half, from 3 hours to 1.5 hours.
               </li>
               <li>
                 <span class="font-bold">Batch Depositing: </span>
