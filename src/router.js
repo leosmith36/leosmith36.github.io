@@ -7,6 +7,7 @@ import Running from './pages/interests/Running.vue'
 import Reading from './pages/interests/Reading.vue'
 import Projects from './pages/Projects.vue'
 import PortfolioWebsite from './pages/projects/PortfolioWebsite.vue'
+import CyclicVoltammetry from './pages/projects/CyclicVoltammetry.vue'
 
 const routes = [
 	{
@@ -33,6 +34,11 @@ const routes = [
 		path: '/portfolio-website',
 		name: 'Portfolio Website',
 		component: PortfolioWebsite,
+	},
+	{
+		path: '/cv-simulator',
+		name: 'Cyclic Voltammetry Simulator',
+		component: CyclicVoltammetry,
 	},
 	{
 		path: '/interests',
