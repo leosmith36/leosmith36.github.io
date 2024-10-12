@@ -16,7 +16,6 @@ onMounted(async () => {
     const parsed = row.split(',')
 
     const [name, date, time, place, url] = parsed
-    console.log(url)
 
     return { name, date, time, place, url }
   })
