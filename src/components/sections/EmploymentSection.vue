@@ -10,7 +10,7 @@ const props = defineProps({
 <template>
   <collapsible-section :disabled="disabled">
     <template #head>
-      <div class="md:flex items-center w-full">
+      <div class="md:flex items-center w-full select-none">
         <div>
           <h2 class="font-bold">{{ title }}</h2> 
           <h3 class="italic">{{ location }}</h3> 
