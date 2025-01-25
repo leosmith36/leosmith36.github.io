@@ -23,10 +23,9 @@ import EmploymentSection from '../components/sections/EmploymentSection.vue'
             with customers and with other employees by routing calls over the internet instead of traditional phone lines.
           </p>
           <p>
-            My work at Voxtelesys involves maintaining and improving numerous projects across the company's technology stack, such as the customer portal and company HUD.
+            My work at Voxtelesys involves maintaining and improving numerous projects across the company's technology stack, especially websites such as the customer portal and company HUD.
             For most of my time at Voxtelesys, my focus has been on the billing and payment web servers, where I have implemented optimizations and features to serve the needs
-            of the accounting team. More recently, my work has shifted towards expanding the voice applications offered by Voxtelesys. These applications include the IVR, voice API,
-            call recordings, and our SIP proxy servers for inbound and outbound calls.
+            of the accounting team. More recently, my work has shifted towards expanding the programmable voice and messaging applications offered by Voxtelesys.
           </p>
           <p>
             Here are some of my key projects:
@@ -41,16 +40,46 @@ import EmploymentSection from '../components/sections/EmploymentSection.vue'
               <li>
                 <span class="font-bold">Web Service Migrations: </span>
                 I migrated the billing and payment web servers to Node.js to improve the readability and performance of those applications,
-                as well as make them consistent with the rest of the code base. To boost maintainability, I also implemented a robust
-                testing framework for these applications which helps ensure that future code changes preserve the existing functionality. Altogether, this overhaul resulted in
-                the time for monthly billing being cut in half, from 3 hours to 1.5 hours.
+                as well as make them consistent with the rest of the code base. To boost maintainability, I implemented a robust
+                testing framework for these applications which helps ensure that future code changes preserve the existing functionality.
+                I also rewrote the database procedures to be more efficient and introduced concurrency using BullMQ as a job queueing system. Altogether, this overhaul resulted in
+                the time for monthly billing being cut in half, from ~3 hours to ~1.5 hours.
               </li>
               <li>
-                <span class="font-bold">Call Troubleshooting: </span>
-                 Previously, customers were unable to troubleshoot calls by downloading the packet captures from the portal, and neither support nor
-                 customers were able to easily view the SIP messages in a call. I built a front-end display for customers and support which allows users to
-                 view SIP messages in the browser using a ladder diagram, download packet captures, and search for specific calls. In addition, I implemented
-                 an automated call analysis feature, which locates and displays "red flags" in SIP messages that may lead to audio issues.
+                <span class="font-bold">Call Analysis: </span>
+                Previously, customers were unable to troubleshoot calls by downloading the packet captures from the portal, and neither support nor
+                customers were able to easily view the SIP messages in a call. I built a front-end display with Vue.js for customers and support which allows users to
+                view SIP messages in the browser using a ladder diagram, download packet captures, and search for specific calls. In addition, I implemented
+                an automated call analysis feature, which locates and displays "red flags" in SIP messages that may lead to audio issues.
+              </li>
+              <li>
+                <span class="font-bold">Dynamic E911: </span>
+                  Leading up to this project, geolocations for 911 numbers were always associated with the phone number itself. However, many customers desired the ability to use the same 911 number
+                  in different locations, such as floors of a hotel. To address this problem, I implemented the ability to route 911 calls on a per-call basis by augmenting our SIP proxy servers to accept 
+                  geolocation information as an input. This project required writing code in a C-like language and developing a wide variety of unit tests to test several edge cases.
+              </li>
+              <li>
+                <span class="font-bold">One-Time Charges: </span>
+                One of my most impactful contributions to Voxtelesys was one-time charges, which is a framework that I designed for adding one-off charges onto customers' recurring invoices. This
+                framework obviated the need for accounting to create one-off invoices every time a phone number, PBX line, etc. had to be purchased. This project was full-stack, in that it involved creating
+                a relational database architecture, a back-end system for processing charges, and a user interface for viewing and managing charges.
+              </li>
+              <li>
+                <span class="font-bold">Flow Builder: </span>
+                One of my favorite projects at Voxtelesys was the Flow Builder, which is a drag-and-drop user interface for building communication flows without writing a single line of code.
+                I was a key player in the design and implementation of both the Flow Builder UI and the web server for processing executions of flows.
+              </li>
+              <li>
+                <span class="font-bold">3CX Licensing: </span>
+                  3CX licensing constitutes a significant portion of the business at Voxtelesys, and previously, all 3CX licensing ordering was done internally. So, I developed a user interface that
+                  allowed customers to purchase and renew 3CX licenses in the customer portal. This project also involves reworking and expanding the billing system for 3CX licenses, since a lot of business logic 
+                  (such as agent discounts) had to be accounted for as well.
+              </li>
+              <li>
+                <span class="font-bold">Answering Machine Detection: </span>
+                  Many of our competitors' programmable voice products include answering machine detection, a feature that allows users to control an IVR call based on whether the call was answered by a machine or human.
+                  I successfully implemented this feature into the IVR system offered by Voxtelesys, thus bringing the company closer to parity with competitors' offerings. Implementing this feature required writing Go code to 
+                  stream audio to a third-party provider and then listen for results that indicate whom the call was answered by.
               </li>
             </ul>
           </p>
